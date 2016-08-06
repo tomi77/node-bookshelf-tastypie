@@ -1,0 +1,26 @@
+{
+  "name": "bookshelf-tastypie",
+  "version": "0.1.0",
+  "description": "Django Tastypie models for Bookshelf",
+  "main": "index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomi77/node-bookshelf-tastypie.git"
+  },
+  "keywords": [
+    "django-tastypie",
+    "bookshelf"
+  ],
+  "author": "Tomasz Jakub Rup",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomi77/node-bookshelf-tastypie/issues"
+  },
+  "homepage": "https://github.com/tomi77/node-bookshelf-tastypie",
+  "dependencies": {
+    "bookshelf": "^0.10.0",
+    "bookshelf-django": "^0.1.0",
+    "coffee-script": "^1.10.0",
+    "knex": "^0.11.9"
+  }
+}
