@@ -30,6 +30,8 @@ var TastypieApiKey = require('bookshelf-tastypie')(bookshelf).TastypieApiKey;
 
 ``TastypieApiKey`` / ``TastypieApiKeys`` - Tastypie ApiKey
 
+``TastypieApiAccess`` / ``TastypieApiAccesses``
+
 ## TODO
 
 * tests

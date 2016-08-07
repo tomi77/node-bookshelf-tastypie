@@ -3,3 +3,5 @@ module.exports = (bookshelf) ->
 
   TastypieApiKey: bookshelf.model 'TastypieApiKey'
   TastypieApiKeys: bookshelf.collection 'TastypieApiKeys'
+  TastypieApiAccess: bookshelf.model 'TastypieApiAccess'
+  TastypieApiAccesses: bookshelf.collection 'TastypieApiAccesses'
