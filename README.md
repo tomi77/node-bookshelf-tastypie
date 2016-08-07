@@ -11,3 +11,26 @@ Django Tastypie models for Bookshelf
 ~~~bash
 npm install bookshelf-tastypie --save
 ~~~
+
+## Usage
+
+Load models to ``registry``
+
+~~~js
+require('bookshelf-tastypie')(bookshelf);
+~~~
+
+or load model/collection
+
+~~~js
+var TastypieApiKey = require('bookshelf-tastypie')(bookshelf).TastypieApiKey;
+~~~
+
+## Available models / collections
+
+``TastypieApiKey`` / ``TastypieApiKeys`` - Tastypie ApiKey
+
+## TODO
+
+* tests
+* create ApiKey when Django user is created
