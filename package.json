@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-tastypie",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Django Tastypie models for Bookshelf",
   "main": "index.coffee",
   "scripts": {
