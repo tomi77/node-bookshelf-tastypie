@@ -25,7 +25,7 @@
   "dependencies": {
     "bookshelf": "^0.10.4",
     "bookshelf-django": "^0.1.0",
-    "knex": "^0.12.0"
+    "knex": "^0.13.0"
   },
   "devDependencies": {
     "coffee-script": "^1.12.7",
