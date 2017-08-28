@@ -2,9 +2,10 @@
   "name": "bookshelf-tastypie",
   "version": "0.2.1",
   "description": "Django Tastypie models for Bookshelf",
-  "main": "index.coffee",
+  "main": "index.js",
   "scripts": {
-    "lint": "coffeelint index.coffee models/"
+    "prepare": "coffee --bare --compile --output . src/",
+    "lint": "coffeelint src/"
   },
   "repository": {
     "type": "git",
@@ -22,12 +23,12 @@
   },
   "homepage": "https://github.com/tomi77/node-bookshelf-tastypie",
   "dependencies": {
-    "bookshelf": "^0.10.0",
+    "bookshelf": "^0.10.4",
     "bookshelf-django": "^0.1.0",
-    "coffee-script": "^1.10.0",
     "knex": "^0.12.0"
   },
   "devDependencies": {
-    "coffeelint": "^1.15.7"
+    "coffee-script": "^1.12.7",
+    "coffeelint": "^1.16.0"
   }
 }
