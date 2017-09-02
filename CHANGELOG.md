@@ -1,6 +1,6 @@
 # Changelog
 
-## master
+## 0.3.0
 
 * @deps update
 * remove coffee-script dependency
