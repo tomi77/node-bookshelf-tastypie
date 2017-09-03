@@ -22,7 +22,7 @@
     "url": "https://github.com/tomi77/node-bookshelf-tastypie/issues"
   },
   "homepage": "https://github.com/tomi77/node-bookshelf-tastypie",
-  "dependencies": {
+  "peerDependencies": {
     "bookshelf": "^0.10.4",
     "bookshelf-django": "^0.1.0",
     "knex": "^0.13.0"

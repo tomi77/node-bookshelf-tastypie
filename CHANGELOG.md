@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* move ``bookshelf``, ``bookshelf-django`` and ``knex`` from `dependencies` to `peerDependencies`
+
 ## 0.3.0
 
 * @deps update
