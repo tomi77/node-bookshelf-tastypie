@@ -1,13 +1,13 @@
 module.exports = (bookshelf) ->
   bookshelf.plugin 'registry'
 
-  unless bookshelf.model('TastypieApiAccess')?
-    bookshelf.model 'TastypieApiAccess',
+  unless bookshelf.model('Tastypie.ApiAccess')?
+    bookshelf.model 'Tastypie.ApiAccess',
       tableName: 'tastypie_apiaccess'
 
-  unless bookshelf.collection('TastypieApiAccesses')?
-    bookshelf.collection 'TastypieApiAccesses',
-      model: bookshelf.model 'TastypieApiAccess'
+  unless bookshelf.collection('Tastypie.ApiAccesses')?
+    bookshelf.collection 'Tastypie.ApiAccesses',
+      model: bookshelf.model 'Tastypie.ApiAccess'
 
-  Model: bookshelf.model 'TastypieApiAccess'
-  Collection: bookshelf.collection 'TastypieApiAccesses'
+  Model: bookshelf.model 'Tastypie.ApiAccess'
+  Collection: bookshelf.collection 'Tastypie.ApiAccesses'

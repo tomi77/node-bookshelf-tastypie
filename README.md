@@ -24,14 +24,14 @@ require('bookshelf-tastypie')(bookshelf);
 or load model/collection
 
 ~~~js
-var TastypieApiKey = require('bookshelf-tastypie')(bookshelf).TastypieApiKey;
+let ApiKey = require('bookshelf-tastypie')(bookshelf).ApiKey;
 ~~~
 
 ## Available models / collections
 
-``TastypieApiKey`` / ``TastypieApiKeys`` - Tastypie ApiKey
+``Tastypie.ApiKey`` / ``Tastypie.ApiKeys`` - Tastypie ApiKey
 
-``TastypieApiAccess`` / ``TastypieApiAccesses``
+``Tastypie.ApiAccess`` / ``Tastypie.ApiAccesses``
 
 ## TODO
 
