@@ -3,6 +3,7 @@
 ## master
 
 * move ``bookshelf``, ``bookshelf-django`` and ``knex`` from `dependencies` to `peerDependencies`
+* add ``knex`` migrations
 
 ### Breaking changes
 

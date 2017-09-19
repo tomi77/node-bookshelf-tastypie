@@ -7,4 +7,5 @@ engines:
 ratings:
   paths:
   - "src/index.coffee"
+  - "src/migrations/*.coffee"
   - "src/models/*.coffee"
