@@ -3,6 +3,7 @@
 ## master
 
 * add ``toString`` method to models
+* fix schema (based on Python models)
 
 ## 0.4.0
 
