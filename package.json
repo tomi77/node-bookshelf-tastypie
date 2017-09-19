@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-tastypie",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Django Tastypie models for Bookshelf",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/tomi77/node-bookshelf-tastypie",
   "peerDependencies": {
     "bookshelf": "^0.10.4",
-    "bookshelf-django": "^0.1.0",
+    "bookshelf-django": "<0.2.0",
     "knex": "^0.13.0"
   },
   "devDependencies": {
