@@ -5,6 +5,8 @@ module.exports = (bookshelf) ->
     bookshelf.model 'Tastypie.ApiAccess',
       tableName: 'tastypie_apiaccess'
 
+      toString: () -> "#{ @get 'identifier' } @ #{ @get 'accessed' }"
+
   unless bookshelf.collection('Tastypie.ApiAccesses')?
     bookshelf.collection 'Tastypie.ApiAccesses',
       model: bookshelf.model 'Tastypie.ApiAccess'

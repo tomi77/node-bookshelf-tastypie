@@ -2,6 +2,10 @@
 
 ## master
 
+* add ``toString`` method to models
+
+## 0.4.0
+
 * move ``bookshelf``, ``bookshelf-django`` and ``knex`` from `dependencies` to `peerDependencies`
 * add ``knex`` migrations
 

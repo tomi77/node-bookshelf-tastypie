@@ -9,6 +9,8 @@ module.exports = (bookshelf) ->
 
       user: () -> @belongsTo 'AuthUser'
 
+      toString: () -> "#{ @get 'key' } for #{ @related 'user' }"
+
     # Add `apiKey` relation to `AuthUser` model
     AuthUser = bookshelf.model 'AuthUser'
     AuthUser::apiKey = () -> @hasOne 'Tastypie.ApiKey', 'user_id'
