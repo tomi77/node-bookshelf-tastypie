@@ -12,9 +12,9 @@ require('../src') bookshelf
 
 assert = require('chai').assert
 
-describe 'Tastypie.ApiKey function', () ->
-  describe '#generate_key', () ->
-    it 'should return new api key', () ->
+describe 'Tastypie.ApiKey', () ->
+  describe '#generate_key function', () ->
+    it 'should return api key like implementation in python', () ->
       ApiKey = bookshelf.model 'Tastypie.ApiKey'
 
       sinon.stub(uuid, 'v4').returns Buffer.from([0x82, 0x90, 0xb7, 0x27, 0xdf, 0x94, 0x40, 0x04, 0x87, 0x31, 0xca, 0xb7, 0x67, 0x0d, 0xaa, 0x48])
