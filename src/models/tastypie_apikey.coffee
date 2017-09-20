@@ -10,10 +10,15 @@ module.exports = (bookshelf) ->
       user: () -> @belongsTo 'AuthUser'
 
       toString: () -> "#{ @get 'key' } for #{ @related 'user' }"
+    ,
+      generate_key: () ->
+        uuid = require 'uuid'
+        crypto = require 'crypto'
+        crypto.createHmac('sha1', uuid.v4()).digest('hex')
+
 
     # Add `apiKey` relation to `AuthUser` model
-    AuthUser = bookshelf.model 'AuthUser'
-    AuthUser::apiKey = () -> @hasOne 'Tastypie.ApiKey', 'user_id'
+    bookshelf.model('AuthUser')::apiKey = () -> @hasOne 'Tastypie.ApiKey', 'user_id'
 
   unless bookshelf.collection('Tastypie.ApiKeys')?
     bookshelf.collection 'Tastypie.ApiKeys',
