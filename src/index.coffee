@@ -1,6 +1,6 @@
 module.exports = (bookshelf) ->
-  require('./models/tastypie_apikey') bookshelf
-  require('./models/tastypie_apiaccess') bookshelf
+  require('./models/apikey') bookshelf
+  require('./models/apiaccess') bookshelf
 
   ApiKey: bookshelf.model 'Tastypie.ApiKey'
   ApiKeys: bookshelf.collection 'Tastypie.ApiKeys'
