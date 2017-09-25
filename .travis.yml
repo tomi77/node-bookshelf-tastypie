@@ -4,7 +4,7 @@ node_js: node
 
 before_script:
   - rm package-lock.json
-  - npm install bookshelf@0.10.4 knex@0.13.0 "bookshelf-django@<0.2.0"
+  - npm install bookshelf@0.10.4 knex@0.13.0 "bookshelf-django@>=0.2.0"
 
 script:
   - npm run coveralls
