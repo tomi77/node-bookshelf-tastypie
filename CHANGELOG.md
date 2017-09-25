@@ -2,6 +2,7 @@
 
 ## master
 
+* fix compatibility with `bookshelf-django 0.2.0`
 * add ``toString`` method to models
 * fix schema (based on Python models)
 
