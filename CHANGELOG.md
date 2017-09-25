@@ -1,8 +1,9 @@
 # Changelog
 
-## master
+## 0.5.0
 
 * fix compatibility with `bookshelf-django 0.2.0`
+* add ``Tastypie.ApiKey#generate_key`` function
 * add ``toString`` method to models
 * fix schema (based on Python models)
 
