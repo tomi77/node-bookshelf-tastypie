@@ -27,7 +27,7 @@
   "homepage": "https://github.com/tomi77/node-bookshelf-tastypie",
   "peerDependencies": {
     "bookshelf": "^0.10.4",
-    "bookshelf-django": ">=0.2.0",
+    "bookshelf-django": ">=0.2.1",
     "knex": "^0.13.0"
   },
   "devDependencies": {
@@ -38,13 +38,10 @@
     "coveralls": "^2.13.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
-    "sinon": "^3.3.0",
+    "sinon": "^4.0.0",
     "sqlite3": "^3.1.11"
   },
   "dependencies": {
-    "bookshelf": "^0.10.4",
-    "bookshelf-django": "^0.2.0",
-    "knex": "^0.13.0",
     "uuid": "^3.1.0"
   }
 }
