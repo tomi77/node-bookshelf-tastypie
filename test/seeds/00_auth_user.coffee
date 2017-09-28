@@ -12,4 +12,15 @@ exports.seed = (knex, Promise) ->
       is_active: yes
       is_superuser: no
       date_joined: new Date()
+    ,
+      id: 2
+      username: 'user2'
+      first_name: ''
+      last_name: ''
+      email: ''
+      password: ''
+      is_staff: no
+      is_active: yes
+      is_superuser: no
+      date_joined: new Date()
     ]

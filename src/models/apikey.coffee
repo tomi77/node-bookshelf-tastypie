@@ -22,6 +22,21 @@ module.exports = (bookshelf) ->
     # Add `apiKey` relation to `Django.Auth.User` model
     AuthUser::apiKey = () -> @hasOne 'Tastypie.ApiKey', 'user_id'
 
+    # Create apiKey, when user is created
+    old_initialize = AuthUser::initialize
+    AuthUser::initialize = () ->
+      old_initialize.apply @, arguments
+
+      @on 'created', @addApiKey
+      return
+
+    AuthUser::addApiKey = () ->
+      ApiKey = bookshelf.model 'Tastypie.ApiKey'
+
+      apiKey = @related('apiKey')
+      apiKey.set user_id: @get('id'), key: ApiKey.generateKey()
+      apiKey.save().then () => @
+
 
   unless bookshelf.collection('Tastypie.ApiKeys')?
     bookshelf.collection 'Tastypie.ApiKeys',
