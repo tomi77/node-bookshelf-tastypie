@@ -5,6 +5,7 @@ Django Tastypie models for Bookshelf
 [![Build Status](https://travis-ci.org/tomi77/node-bookshelf-tastypie.svg)](https://travis-ci.org/tomi77/node-bookshelf-tastypie)
 [![Coverage Status](https://coveralls.io/repos/github/tomi77/node-bookshelf-tastypie/badge.svg?branch=master)](https://coveralls.io/github/tomi77/node-bookshelf-tastypie?branch=master)
 [![Code Climate](https://codeclimate.com/github/tomi77/node-bookshelf-tastypie/badges/gpa.svg)](https://codeclimate.com/github/tomi77/node-bookshelf-tastypie)
+[![dependencies Status](https://david-dm.org/tomi77/node-bookshelf-tastypie/status.svg)](https://david-dm.org/tomi77/node-bookshelf-tastypie)
 [![devDependencies Status](https://david-dm.org/tomi77/node-bookshelf-tastypie/dev-status.svg)](https://david-dm.org/tomi77/node-bookshelf-tastypie?type=dev)
 [![peerDependencies Status](https://david-dm.org/tomi77/node-bookshelf-tastypie/peer-status.svg)](https://david-dm.org/tomi77/node-bookshelf-tastypie?type=peer)
 ![Downloads](https://img.shields.io/npm/dt/bookshelf-tastypie.svg)
