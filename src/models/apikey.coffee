@@ -7,7 +7,7 @@ module.exports = (bookshelf) ->
     bookshelf.model 'Tastypie.ApiKey',
       tableName: 'tastypie_apikey'
 
-      user: () -> @belongsTo 'Django.Auth.User'
+      user: () -> @belongsTo 'Django.Auth.User', 'user_id'
 
       toString: () -> "#{ @get 'key' } for #{ @related 'user' }"
     ,
