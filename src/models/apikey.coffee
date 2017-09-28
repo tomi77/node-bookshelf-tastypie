@@ -11,14 +11,17 @@ module.exports = (bookshelf) ->
 
       toString: () -> "#{ @get 'key' } for #{ @related 'user' }"
     ,
-      generate_key: () ->
+      generateKey: () ->
         uuid = require 'uuid'
         crypto = require 'crypto'
         crypto.createHmac('sha1', uuid.v4()).digest('hex')
 
 
+    AuthUser = bookshelf.model 'Django.Auth.User'
+
     # Add `apiKey` relation to `Django.Auth.User` model
-    bookshelf.model('Django.Auth.User')::apiKey = () -> @hasOne 'Tastypie.ApiKey', 'user_id'
+    AuthUser::apiKey = () -> @hasOne 'Tastypie.ApiKey', 'user_id'
+
 
   unless bookshelf.collection('Tastypie.ApiKeys')?
     bookshelf.collection 'Tastypie.ApiKeys',

@@ -18,7 +18,6 @@ Django Tastypie models for Bookshelf
   * [Tastypie.ApiKeys](#tastypieapikeys)
   * [Tastypie.ApiAccess](#tastypieapiaccess)
   * [Tastypie.ApiAccesses](#tastypieapiaccesses)
-* [TODO](#todo)
 
 ## Installation
 
@@ -58,13 +57,13 @@ ApiKey model
 
 String representation of api key
 
-#### `generate_key() -> string`
+#### `generateKey() -> string`
 
 Static function to generate unique keys
 
 ~~~js
 ApiKey = bookshelf.model('Tastypie.ApiKey')
-new_key = ApiKey.generate_key()
+new_key = ApiKey.generateKey()
 ~~~
 
 ### Tastypie.ApiKeys
@@ -78,8 +77,3 @@ ApiKey collection
 String representation od api access
 
 ### Tastypie.ApiAccesses
-
-## TODO
-
-* tests
-* create ApiKey when Django user is created
