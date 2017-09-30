@@ -19,6 +19,7 @@ Django Tastypie models for Bookshelf
   * [Tastypie.ApiKeys](#tastypieapikeys)
   * [Tastypie.ApiAccess](#tastypieapiaccess)
   * [Tastypie.ApiAccesses](#tastypieapiaccesses)
+* [Testing your project](#testing-your-project)
 
 ## Installation
 
@@ -78,3 +79,39 @@ ApiKey collection
 String representation od api access
 
 ### Tastypie.ApiAccesses
+
+## Testing your project
+
+In `beforeAll` hook runs knex migrations in order
+
+* Django
+* Tastypie
+* Your project
+
+All migrations must have own migration table (`tableName` property).
+
+~~~js
+before(function() {
+  knex.migrate.latest({directory: 'node_modules/bookshelf-django/migrations/', tableName: 'knex_migrations_django'})
+}).then(function() {
+  knex.migrate.latest({directory: 'node_modules/bookshelf-tastypie/migrations/', tableName: 'knex_migrations_tastypie'})
+}).then(function() {
+  knex.migrate.latest({directory: 'src/migrations/', tableName: 'knex_migrations_my_project'})
+})
+~~~
+
+In `afterAll` hook runs knex migrations in reverse order
+
+* Your project
+* Tastypie
+* Django
+
+~~~js
+after(function() {
+  knex.migrate.rollback({directory: 'src/migrations/', tableName: 'knex_migrations_my_project'})
+}).then(function() {
+  knex.migrate.rollback({directory: 'node_modules/bookshelf-tastypie/migrations/', tableName: 'knex_migrations_tastypie'})
+}).then(function() {
+  knex.migrate.rollback({directory: 'node_modules/bookshelf-django/migrations/', tableName: 'knex_migrations_django'})
+})
+~~~

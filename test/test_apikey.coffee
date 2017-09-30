@@ -24,7 +24,7 @@ after () ->
   .then () -> bookshelf.knex.migrate.rollback directory: 'node_modules/bookshelf-django/migrations/', tableName: 'knex_migrations_django'
 
 describe 'Tastypie.ApiKey', () ->
-  before () -> knex.seed.run directory: 'test/seeds/'
+  before () -> knex.seed.run directory: 'test/seeds/apikey/'
 
   after () ->
     knex.table('auth_user').del()
@@ -55,7 +55,7 @@ describe 'Tastypie.ApiKey', () ->
         assert.equal api_key.toString(), 'qaz123 for user'
 
 describe 'Django.Auth.User', () ->
-  before () -> knex.seed.run directory: 'test/seeds/'
+  before () -> knex.seed.run directory: 'test/seeds/apikey/'
 
   after () ->
     knex.table('auth_user').del()

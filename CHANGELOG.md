@@ -1,5 +1,10 @@
 # Changelog
 
+## master
+
+* improve documentation
+* create `Tastypie.ApiKey` for new `Django.Auth.User`
+
 ## 0.5.0
 
 * fix compatibility with `bookshelf-django 0.2.0`
