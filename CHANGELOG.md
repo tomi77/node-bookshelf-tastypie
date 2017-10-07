@@ -4,6 +4,7 @@
 
 * improve documentation
 * create `Tastypie.ApiKey` for new `Django.Auth.User`
+* @deps update
 
 ## 0.5.0
 
